@@ -9,7 +9,6 @@
   Me especializo en aplicaciones web y móviles utilizando tecnologías modernas.
 </p>
 
-<img src="https://github-readme-stats.vercel.app/api?username=avdevop&show_icons=true&count_private=true" alt="GitHub Stats"/>
 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=avdevop" alt="GitHub Streak"/>
 
