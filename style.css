@@ -55,7 +55,7 @@ a {
     width: 42px;
     height: 42px;
 
-    border-radius: 50%;
+    border-radius: 10%;
 
     object-fit: cover;
 
