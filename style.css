@@ -1,6 +1,7 @@
 :root {
     --background: #070b14;
     --background-light: #0d1422;
+
     --card: #101a2b;
     --card-hover: #142238;
 
@@ -34,8 +35,11 @@ html {
 
 body {
     font-family: "Inter", sans-serif;
+
     background: var(--background);
+
     color: var(--text);
+
     line-height: 1.7;
 }
 
@@ -48,6 +52,7 @@ a {
 
 .container {
     width: min(90%, var(--max-width));
+
     margin: auto;
 }
 
@@ -58,7 +63,9 @@ a {
 
 .navbar {
     position: sticky;
+
     top: 0;
+
     z-index: 1000;
 
     background: rgba(7, 11, 20, 0.85);
@@ -80,51 +87,19 @@ a {
 }
 
 
-/* =========================
-   LOGO DEL MENÚ
-========================= */
-
 .logo {
-    display: flex;
+    font-size: 1.8rem;
 
-    align-items: center;
+    font-weight: 800;
 
-    justify-content: center;
-
-    width: 40px;
-
-    height: 40px;
-
-    flex-shrink: 0;
+    letter-spacing: -2px;
 }
 
 
-.menu-logo {
-    display: block;
-
-    width: 32px !important;
-
-    height: 32px !important;
-
-    min-width: 32px !important;
-
-    min-height: 32px !important;
-
-    max-width: 32px !important;
-
-    max-height: 32px !important;
-
-    aspect-ratio: 1 / 1;
-
-    object-fit: cover;
-
-    border-radius: 50%;
+.logo span {
+    color: var(--primary);
 }
 
-
-/* =========================
-   NAV
-========================= */
 
 nav {
     display: flex;
@@ -177,11 +152,6 @@ nav a:hover {
     gap: 70px;
 
     align-items: center;
-}
-
-
-.hero-text {
-    min-width: 0;
 }
 
 
@@ -302,41 +272,36 @@ nav a:hover {
 }
 
 
-/* =========================
-   FOTO DE PERFIL
-========================= */
+.avatar {
+    width: 150px;
 
-.profile-image {
-    display: block;
+    height: 150px;
 
-    width: 80px !important;
-
-    height: 80px !important;
-
-    min-width: 80px !important;
-
-    min-height: 80px !important;
-
-    max-width: 80px !important;
-
-    max-height: 80px !important;
-
-    margin: 0 auto 25px auto;
-
-    aspect-ratio: 1 / 1;
-
-    object-fit: cover;
+    margin: auto auto 25px;
 
     border-radius: 50%;
 
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 3rem;
+
+    font-weight: 800;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1e8cff,
+            #0050ac
+        );
+
     box-shadow:
-        0 0 30px rgba(30, 140, 255, 0.25);
+        0 0 50px rgba(30, 140, 255, 0.25);
 }
 
-
-/* =========================
-   STATUS
-========================= */
 
 .status {
     display: inline-flex;
@@ -376,7 +341,7 @@ nav a:hover {
 
 
 /* =========================
-   SECCIONES
+   SECTIONS
 ========================= */
 
 .section {
@@ -522,6 +487,13 @@ nav a:hover {
 }
 
 
+.tech-card span {
+    font-size: 0.85rem;
+
+    color: var(--text-secondary);
+}
+
+
 /* =========================
    PROYECTOS
 ========================= */
@@ -609,7 +581,7 @@ nav a:hover {
 
 
 /* =========================
-   BOTÓN PROYECTO
+   BOTÓN DE PROYECTO
 ========================= */
 
 .project-button {
@@ -895,36 +867,6 @@ footer span {
 
     .project-card {
         padding: 25px;
-    }
-
-
-    .profile-image {
-        width: 70px !important;
-
-        height: 70px !important;
-
-        min-width: 70px !important;
-
-        min-height: 70px !important;
-
-        max-width: 70px !important;
-
-        max-height: 70px !important;
-    }
-
-
-    .menu-logo {
-        width: 32px !important;
-
-        height: 32px !important;
-
-        min-width: 32px !important;
-
-        min-height: 32px !important;
-
-        max-width: 32px !important;
-
-        max-height: 32px !important;
     }
 
 }
