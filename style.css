@@ -272,34 +272,25 @@ nav a:hover {
 }
 
 
-.avatar {
-    width: 150px;
+.profile-image {
+    display: block !important;
 
-    height: 150px;
+    width: 80px !important;
+    height: 80px !important;
 
-    margin: auto auto 25px;
+    min-width: 80px !important;
+    min-height: 80px !important;
 
-    border-radius: 50%;
+    max-width: 80px !important;
+    max-height: 80px !important;
 
-    display: flex;
+    margin: 0 auto 25px auto !important;
 
-    align-items: center;
+    border-radius: 50% !important;
 
-    justify-content: center;
+    object-fit: cover !important;
 
-    font-size: 3rem;
-
-    font-weight: 800;
-
-    background:
-        linear-gradient(
-            135deg,
-            #1e8cff,
-            #0050ac
-        );
-
-    box-shadow:
-        0 0 50px rgba(30, 140, 255, 0.25);
+    box-sizing: border-box !important;
 }
 
 
