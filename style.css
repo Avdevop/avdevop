@@ -273,26 +273,24 @@ nav a:hover {
 
 
 .avatar {
-    width: 150px;
-    height: 150px;
+    width: 90px;
+    height: 90px;
 
-    margin: auto auto 25px;
+    margin: 0 auto 25px;
 
     border-radius: 50%;
 
     overflow: hidden;
 
-    background:
-        linear-gradient(
-            135deg,
-            #1e8cff,
-            #0050ac
-        );
+    background: linear-gradient(
+        135deg,
+        #1e8cff,
+        #0050ac
+    );
 
     box-shadow:
-        0 0 50px rgba(30, 140, 255, 0.25);
+        0 0 30px rgba(30, 140, 255, 0.25);
 }
-
 
 .avatar img {
     width: 100%;
@@ -302,7 +300,6 @@ nav a:hover {
 
     display: block;
 }
-
 
 .status {
     display: inline-flex;
