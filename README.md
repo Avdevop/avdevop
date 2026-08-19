@@ -1,8 +1,8 @@
 <div align="center">
 
-# 👋 Hola, soy Aarón Villalta
+👋 Hola, soy Aarón Villalta
 
-### 💻 Ingeniero en Sistemas | Instructor de Programación | Desarrollador Full Stack
+💻 Ingeniero en Sistemas | Instructor de Programación | Desarrollador Full Stack
 
 <p>
   Apasionado por la tecnología, el desarrollo de software y la enseñanza.
@@ -17,7 +17,7 @@
 
 ---
 
-## 🚀 Sobre mí
+🚀 Sobre mí
 
 - 👨‍💻 Desarrollador de aplicaciones web y móviles.
 - 📱 Experiencia con Flutter, Android y tecnologías multiplataforma.
@@ -28,7 +28,7 @@
 
 ---
 
-## 🛠️ Tecnologías
+🛠️ Tecnologías
 
 <div align="center">
 
@@ -36,35 +36,22 @@
 
 </div>
 
----
 
-## 📊 Estadísticas
 
-<div align="center">
+📱 Proyectos Destacados
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=avdevop&layout=compact" alt="Top Languages"/>
-
-</div>
-
----
-
-## 📱 Proyectos Destacados
-
-### 🔹 Connected Pro
-Aplicación enfocada en la conexión entre clientes y profesionales.
-
-### 🔹 Gato Espacial
+🔹 Gato Espacial
 Videojuego móvil desarrollado para Android.
 
-### 🔹 Sistemas Web
+🔹 Sistemas Web
 Desarrollo de plataformas web utilizando React, Node.js, PHP y MySQL.
 
-### 🔹 Aplicaciones Flutter
+🔹 Aplicaciones Flutter
 Desarrollo de aplicaciones móviles multiplataforma para Android e iOS.
 
 ---
 
-## 🎓 Experiencia en Formación
+🎓 Experiencia en Formación
 
 - Programación Web
 - Desarrollo de Software
@@ -75,7 +62,7 @@ Desarrollo de aplicaciones móviles multiplataforma para Android e iOS.
 
 ---
 
-## 🌎 Conecta conmigo
+🌎 Conecta conmigo
 
 <p align="center">
   <a href="https://github.com/avdevop">
@@ -87,7 +74,7 @@ Desarrollo de aplicaciones móviles multiplataforma para Android e iOS.
 
 <div align="center">
 
-### ✨ "La tecnología tiene más impacto cuando se utiliza para servir y enseñar a otros."
+✨ "La tecnología tiene más impacto cuando se utiliza para servir y enseñar a otros."
 
 ⭐ Gracias por visitar mi perfil.
 
