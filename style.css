@@ -51,17 +51,27 @@ a {
     margin: auto;
 }
 
-.menu-logo {
-    width: 42px;
-    height: 42px;
+.logo {
+    display: flex;
+    align-items: center;
+}
 
-    border-radius: 10%;
+.menu-logo {
+    display: block !important;
+
+    width: 30px !important;
+    height: 30px !important;
+
+    min-width: 30px !important;
+    min-height: 30px !important;
+
+    max-width: 30px !important;
+    max-height: 30px !important;
+
+    border-radius: 50%;
 
     object-fit: cover;
-
-    display: block;
-}
-/* =========================
+}/* =========================
    NAVBAR
 ========================= */
 
