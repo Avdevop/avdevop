@@ -1,16 +1,46 @@
-## Hi there 👋
+# 👋 Hola, soy Aarón Villalta
 
-<!--
-**Avdevop/avdevop** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## 💻 Ingeniero en Sistemas | Instructor de Programación
 
-Here are some ideas to get you started:
+Soy desarrollador de software e instructor de tecnologías enfocadas en programación, desarrollo web y robótica educativa. Me apasiona crear soluciones tecnológicas y compartir conocimientos con jóvenes y futuros desarrolladores.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🚀 Tecnologías y herramientas
+
+- Flutter
+- Kotlin
+- Java
+- JavaScript
+- React
+- Node.js
+- PHP
+- MySQL
+- HTML5 & CSS3
+- Git & GitHub
+
+### 📚 Actualmente
+
+- 🔭 Desarrollando aplicaciones móviles con Flutter.
+- 🌱 Aprendiendo nuevas tecnologías para el desarrollo multiplataforma.
+- 👨‍🏫 Impartiendo cursos de programación y desarrollo web.
+- 🤝 Colaborando en proyectos educativos para jóvenes.
+
+### 📱 Proyectos destacados
+
+- Connected Pro
+- Gato Espacial
+- Sistemas Web con React y Node.js
+- Aplicaciones móviles con Flutter
+
+### 📫 Contacto
+
+- GitHub: https://github.com/avdevop
+- Correo: gacvillalta34@gmail.com
+- WhatsApp: +50372132877
+
+### ⚡ Dato curioso
+
+Creo que la mejor forma de aprender programación es construyendo proyectos reales.
+
+---
+
+⭐ Gracias por visitar mi perfil.
