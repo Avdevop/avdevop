@@ -51,27 +51,8 @@ a {
     margin: auto;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
 
-.menu-logo {
-    display: block !important;
-
-    width: 30px !important;
-    height: 30px !important;
-
-    min-width: 30px !important;
-    min-height: 30px !important;
-
-    max-width: 30px !important;
-    max-height: 30px !important;
-
-    border-radius: 50%;
-
-    object-fit: cover;
-}/* =========================
+/* =========================
    NAVBAR
 ========================= */
 
@@ -92,27 +73,64 @@ a {
     min-height: 70px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 }
 
 
+/* =========================
+   LOGO DEL MENÚ
+========================= */
+
 .logo {
-    font-size: 1.8rem;
-    font-weight: 800;
+    display: flex;
 
-    letter-spacing: -2px;
+    align-items: center;
+
+    justify-content: center;
+
+    width: 40px;
+
+    height: 40px;
+
+    flex-shrink: 0;
 }
 
 
-.logo span {
-    color: var(--primary);
+.menu-logo {
+    display: block;
+
+    width: 32px !important;
+
+    height: 32px !important;
+
+    min-width: 32px !important;
+
+    min-height: 32px !important;
+
+    max-width: 32px !important;
+
+    max-height: 32px !important;
+
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+
+    border-radius: 50%;
 }
 
+
+/* =========================
+   NAV
+========================= */
 
 nav {
     display: flex;
+
     gap: 22px;
+
     align-items: center;
 }
 
@@ -139,6 +157,7 @@ nav a:hover {
     min-height: 90vh;
 
     display: flex;
+
     align-items: center;
 
     background:
@@ -288,24 +307,30 @@ nav a:hover {
 ========================= */
 
 .profile-image {
-    display: block !important;
+    display: block;
 
     width: 80px !important;
+
     height: 80px !important;
 
     min-width: 80px !important;
+
     min-height: 80px !important;
 
     max-width: 80px !important;
+
     max-height: 80px !important;
 
-    margin: 0 auto 25px auto !important;
+    margin: 0 auto 25px auto;
 
-    border-radius: 50% !important;
+    aspect-ratio: 1 / 1;
 
-    object-fit: cover !important;
+    object-fit: cover;
 
-    box-sizing: border-box !important;
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 30px rgba(30, 140, 255, 0.25);
 }
 
 
@@ -334,6 +359,7 @@ nav a:hover {
 
 .status span {
     width: 8px;
+
     height: 8px;
 
     background: #35d07f;
@@ -491,14 +517,8 @@ nav a:hover {
 
 .tech-card img {
     width: 45px;
+
     height: 45px;
-}
-
-
-.tech-card span {
-    font-size: 0.85rem;
-
-    color: var(--text-secondary);
 }
 
 
@@ -589,7 +609,7 @@ nav a:hover {
 
 
 /* =========================
-   BOTÓN DE PROYECTO
+   BOTÓN PROYECTO
 ========================= */
 
 .project-button {
@@ -878,9 +898,33 @@ footer span {
     }
 
 
-    .avatar {
-        width: 80px;
-        height: 80px;
+    .profile-image {
+        width: 70px !important;
+
+        height: 70px !important;
+
+        min-width: 70px !important;
+
+        min-height: 70px !important;
+
+        max-width: 70px !important;
+
+        max-height: 70px !important;
+    }
+
+
+    .menu-logo {
+        width: 32px !important;
+
+        height: 32px !important;
+
+        min-width: 32px !important;
+
+        min-height: 32px !important;
+
+        max-width: 32px !important;
+
+        max-height: 32px !important;
     }
 
 }
