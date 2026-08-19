@@ -1,6 +1,7 @@
 :root {
     --background: #070b14;
     --background-light: #0d1422;
+
     --card: #101a2b;
     --card-hover: #142238;
 
@@ -16,6 +17,10 @@
 }
 
 
+/* =========================
+   RESET
+========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -30,8 +35,11 @@ html {
 
 body {
     font-family: "Inter", sans-serif;
+
     background: var(--background);
+
     color: var(--text);
+
     line-height: 1.7;
 }
 
@@ -44,6 +52,7 @@ a {
 
 .container {
     width: min(90%, var(--max-width));
+
     margin: auto;
 }
 
@@ -54,10 +63,13 @@ a {
 
 .navbar {
     position: sticky;
+
     top: 0;
+
     z-index: 1000;
 
     background: rgba(7, 11, 20, 0.85);
+
     backdrop-filter: blur(15px);
 
     border-bottom: 1px solid var(--border);
@@ -68,14 +80,18 @@ a {
     min-height: 70px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 }
 
 
 .logo {
     font-size: 1.8rem;
+
     font-weight: 800;
+
     letter-spacing: -2px;
 }
 
@@ -87,13 +103,18 @@ a {
 
 nav {
     display: flex;
-    gap: 25px;
+
+    gap: 22px;
+
+    align-items: center;
 }
 
 
 nav a {
     color: var(--text-secondary);
-    font-size: 0.9rem;
+
+    font-size: 0.85rem;
+
     transition: 0.3s;
 }
 
@@ -111,6 +132,7 @@ nav a:hover {
     min-height: 90vh;
 
     display: flex;
+
     align-items: center;
 
     background:
@@ -124,7 +146,9 @@ nav a:hover {
 
 .hero-content {
     display: grid;
+
     grid-template-columns: 1.5fr 1fr;
+
     gap: 70px;
 
     align-items: center;
@@ -133,13 +157,16 @@ nav a:hover {
 
 .welcome {
     color: var(--primary-light);
+
     font-weight: 600;
 }
 
 
 .hero h1 {
     font-size: clamp(3rem, 7vw, 5.5rem);
+
     line-height: 1;
+
     letter-spacing: -4px;
 
     margin: 15px 0;
@@ -153,34 +180,43 @@ nav a:hover {
 
 .hero h2 {
     font-size: clamp(1.3rem, 3vw, 2rem);
+
     color: var(--text-secondary);
+
     margin-bottom: 20px;
 }
 
 
 .hero-description {
     max-width: 650px;
+
     color: var(--text-secondary);
+
     font-size: 1.05rem;
 }
 
 
 .location {
     margin-top: 20px;
+
     color: var(--text-secondary);
 }
 
 
 .buttons {
     display: flex;
+
     gap: 15px;
+
     margin-top: 30px;
 }
 
 
 .btn {
     padding: 12px 25px;
+
     border-radius: 8px;
+
     font-weight: 600;
 
     transition: 0.3s;
@@ -189,6 +225,7 @@ nav a:hover {
 
 .btn-primary {
     background: var(--primary);
+
     color: white;
 }
 
@@ -200,6 +237,7 @@ nav a:hover {
 
 .btn-secondary {
     border: 1px solid var(--border);
+
     background: var(--card);
 }
 
@@ -214,13 +252,15 @@ nav a:hover {
 ========================= */
 
 .hero-card {
-    background: linear-gradient(
-        145deg,
-        #101b2e,
-        #0a111e
-    );
+    background:
+        linear-gradient(
+            145deg,
+            #101b2e,
+            #0a111e
+        );
 
     border: 1px solid var(--border);
+
     border-radius: 20px;
 
     padding: 45px 30px;
@@ -234,6 +274,7 @@ nav a:hover {
 
 .avatar {
     width: 150px;
+
     height: 150px;
 
     margin: auto auto 25px;
@@ -241,10 +282,13 @@ nav a:hover {
     border-radius: 50%;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     font-size: 3rem;
+
     font-weight: 800;
 
     background:
@@ -261,7 +305,9 @@ nav a:hover {
 
 .status {
     display: inline-flex;
+
     align-items: center;
+
     gap: 8px;
 
     padding: 7px 12px;
@@ -278,6 +324,7 @@ nav a:hover {
 
 .status span {
     width: 8px;
+
     height: 8px;
 
     background: #35d07f;
@@ -288,6 +335,7 @@ nav a:hover {
 
 .hero-card p {
     margin-top: 25px;
+
     color: var(--text-secondary);
 }
 
@@ -308,7 +356,9 @@ nav a:hover {
 
 .section-title {
     display: flex;
+
     align-items: center;
+
     gap: 15px;
 
     margin-bottom: 45px;
@@ -317,6 +367,7 @@ nav a:hover {
 
 .section-title span {
     color: var(--primary);
+
     font-weight: 700;
 }
 
@@ -328,30 +379,36 @@ nav a:hover {
 
 .section-description {
     color: var(--text-secondary);
+
     margin-top: -25px;
+
     margin-bottom: 40px;
 }
 
 
 /* =========================
-   SOBRE MI
+   SOBRE MÍ
 ========================= */
 
 .about-grid {
     display: grid;
+
     grid-template-columns: 1.3fr 1fr;
+
     gap: 60px;
 }
 
 
 .about-text p {
     color: var(--text-secondary);
+
     margin-bottom: 20px;
 }
 
 
 .about-list {
     display: grid;
+
     gap: 15px;
 }
 
@@ -366,18 +423,20 @@ nav a:hover {
     border-radius: 12px;
 
     display: flex;
+
     flex-direction: column;
 }
 
 
 .info-item span {
     color: var(--text-secondary);
+
     font-size: 0.9rem;
 }
 
 
 /* =========================
-   TECNOLOGIAS
+   TECNOLOGÍAS
 ========================= */
 
 .technologies {
@@ -400,6 +459,7 @@ nav a:hover {
     border-radius: 12px;
 
     display: flex;
+
     flex-direction: column;
 
     align-items: center;
@@ -412,19 +472,24 @@ nav a:hover {
 
 .tech-card:hover {
     transform: translateY(-5px);
+
     background: var(--card-hover);
-    border-color: rgba(30, 140, 255, 0.4);
+
+    border-color:
+        rgba(30, 140, 255, 0.4);
 }
 
 
 .tech-card img {
     width: 45px;
+
     height: 45px;
 }
 
 
 .tech-card span {
     font-size: 0.85rem;
+
     color: var(--text-secondary);
 }
 
@@ -453,6 +518,10 @@ nav a:hover {
     border-radius: 15px;
 
     transition: 0.3s;
+
+    display: flex;
+
+    flex-direction: column;
 }
 
 
@@ -475,12 +544,14 @@ nav a:hover {
 
 .project-card h3 {
     font-size: 1.3rem;
+
     margin-bottom: 10px;
 }
 
 
 .project-card p {
     color: var(--text-secondary);
+
     font-size: 0.9rem;
 }
 
@@ -510,7 +581,44 @@ nav a:hover {
 
 
 /* =========================
-   FORMACION
+   BOTÓN DE PROYECTO
+========================= */
+
+.project-button {
+    display: inline-block;
+
+    width: fit-content;
+
+    margin-top: 25px;
+
+    padding: 10px 18px;
+
+    background: var(--primary);
+
+    color: white;
+
+    border-radius: 7px;
+
+    font-size: 0.85rem;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.project-button:hover {
+    transform: translateY(-3px);
+
+    background: var(--primary-light);
+
+    box-shadow:
+        0 8px 25px rgba(30, 140, 255, 0.25);
+}
+
+
+/* =========================
+   FORMACIÓN
 ========================= */
 
 .education {
@@ -631,6 +739,7 @@ nav a:hover {
 
 .whatsapp {
     background: #25d366;
+
     color: #06140b;
 }
 
@@ -665,6 +774,19 @@ footer span {
 /* =========================
    RESPONSIVE
 ========================= */
+
+@media (max-width: 1000px) {
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 0.75rem;
+    }
+
+}
+
 
 @media (max-width: 850px) {
 
@@ -740,6 +862,11 @@ footer span {
 
     .contact-btn {
         width: 100%;
+    }
+
+
+    .project-card {
+        padding: 25px;
     }
 
 }
