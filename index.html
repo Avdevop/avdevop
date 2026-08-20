@@ -783,19 +783,90 @@
                 </div>
 
 
-                <div class="github-stats">
+                <div class="github-dashboard">
 
-                    <img
-                        src="https://github-readme-stats.vercel.app/api?username=avdevop&show_icons=true&hide_border=true"
-                        alt="GitHub Stats"
-                    >
+    <div class="github-card">
 
-                    <img
-                        src="https://github-readme-stats.vercel.app/api/top-langs/?username=avdevop&layout=compact&hide_border=true"
-                        alt="Top Languages"
-                    >
+        <div class="github-card-icon">
+            📦
+        </div>
 
-                </div>
+        <strong id="github-repositories">
+            —
+        </strong>
+
+        <span>
+            Repositorios
+        </span>
+
+    </div>
+
+
+    <div class="github-card">
+
+        <div class="github-card-icon">
+            👥
+        </div>
+
+        <strong id="github-followers">
+            —
+        </strong>
+
+        <span>
+            Seguidores
+        </span>
+
+    </div>
+
+
+    <div class="github-card">
+
+        <div class="github-card-icon">
+            ⭐
+        </div>
+
+        <strong id="github-public">
+            —
+        </strong>
+
+        <span>
+            Repositorios públicos
+        </span>
+
+    </div>
+
+
+    <div class="github-card">
+
+        <div class="github-card-icon">
+            👤
+        </div>
+
+        <strong id="github-following">
+            —
+        </strong>
+
+        <span>
+            Siguiendo
+        </span>
+
+    </div>
+
+</div>
+
+
+<div class="github-profile-button">
+
+    <a
+        href="https://github.com/avdevop"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project-button"
+    >
+        🐙 Ver mi GitHub
+    </a>
+
+</div>
 
             </div>
 
@@ -869,6 +940,45 @@
         </div>
 
     </footer>
+<script>
 
+async function cargarGitHubStats() {
+
+    try {
+
+        const response = await fetch("./github-stats.json");
+
+        if (!response.ok) {
+            throw new Error("No se pudo cargar github-stats.json");
+        }
+
+        const data = await response.json();
+
+        document.getElementById("github-repositories").textContent =
+            data.repositories;
+
+        document.getElementById("github-followers").textContent =
+            data.followers;
+
+        document.getElementById("github-public").textContent =
+            data.public_repositories;
+
+        document.getElementById("github-following").textContent =
+            data.following;
+
+    } catch (error) {
+
+        console.error(
+            "Error cargando estadísticas de GitHub:",
+            error
+        );
+
+    }
+
+}
+
+cargarGitHubStats();
+
+</script>
 </body>
 </html>
