@@ -1065,3 +1065,165 @@ footer span {
     }
 
 }
+/* =========================
+   GITHUB REPOSITORIES
+========================= */
+
+.github-repositories {
+    margin-top: 50px;
+}
+
+.github-repositories h3 {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.github-repositories-description {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+}
+
+
+/* LISTA */
+
+.repository-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+/* TARJETA */
+
+.repository-card {
+    display: flex;
+    flex-direction: column;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    transition: 0.3s;
+
+    min-height: 230px;
+}
+
+.repository-card:hover {
+    transform: translateY(-6px);
+
+    border-color:
+        rgba(30, 140, 255, 0.4);
+
+    background: var(--card-hover);
+}
+
+
+/* ICONO */
+
+.repository-icon {
+    font-size: 2rem;
+
+    margin-bottom: 15px;
+}
+
+
+/* CONTENIDO */
+
+.repository-content {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+}
+
+.repository-content h4 {
+    font-size: 1.15rem;
+
+    margin-bottom: 10px;
+
+    word-break: break-word;
+}
+
+.repository-content p {
+    color: var(--text-secondary);
+
+    font-size: 0.9rem;
+
+    line-height: 1.6;
+
+    margin-bottom: 15px;
+}
+
+
+/* LENGUAJE */
+
+.repository-language {
+    display: inline-block;
+
+    font-size: 0.8rem;
+
+    color: var(--primary-light);
+
+    margin-bottom: 20px;
+}
+
+
+/* BOTÓN */
+
+.repository-button {
+    margin-top: auto;
+
+    display: inline-block;
+
+    text-align: center;
+
+    padding: 10px 15px;
+
+    border-radius: 8px;
+
+    background: rgba(30, 140, 255, 0.1);
+
+    color: var(--primary-light);
+
+    text-decoration: none;
+
+    font-size: 0.85rem;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.repository-button:hover {
+    background: var(--primary-light);
+
+    color: white;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .repository-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .repository-list {
+        grid-template-columns: 1fr;
+    }
+
+}
