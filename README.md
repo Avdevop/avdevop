@@ -67,21 +67,6 @@ Desarrollo de aplicaciones móviles multiplataforma para Android e iOS.
 - 📊 Ofimática
 - 👨‍🎓 Formación tecnológica para jóvenes
 
----
-
-📊 **GitHub**
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=avdevop&show_icons=true&hide_border=true" alt="GitHub Stats"/>
-
-<br>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=avdevop&layout=compact&hide_border=true" alt="Top Languages"/>
-
-</div>
-
----
 
 🌎 **Conecta conmigo**
 
