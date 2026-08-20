@@ -47,13 +47,18 @@ jobs:
           PUBLIC_REPOS=$(gh api users/avdevop \
             --jq '.public_repos')
 
+          REPOSITORIES=$(gh repo list avdevop \
+          --limit 100 \
+          --json name,description,url,primaryLanguage,isFork \
+          --jq '[.[] | select(.isFork == false)]')
           cat > github-stats.json << EOF
           {
             "username": "avdevop",
             "repositories": $REPOS,
             "public_repositories": $PUBLIC_REPOS,
             "followers": $FOLLOWERS,
-            "following": $FOLLOWING
+            "following": $FOLLOWING,
+            "repository_list": $REPOSITORIES
           }
           EOF
 
