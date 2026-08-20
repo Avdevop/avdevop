@@ -3,5 +3,6 @@
   "repositories": 6,
   "public_repositories": 6,
   "followers": 0,
-  "following": 0
+  "following": 0,
+  "repository_list": [{"description":"","isFork":false,"name":"avdevop","primaryLanguage":{"name":"HTML"},"url":"https://github.com/Avdevop/avdevop"},{"description":"","isFork":false,"name":"administrador","primaryLanguage":{"name":"HTML"},"url":"https://github.com/Avdevop/administrador"},{"description":"","isFork":false,"name":"becas","primaryLanguage":{"name":"HTML"},"url":"https://github.com/Avdevop/becas"},{"description":"","isFork":false,"name":"hospital-proyecto","primaryLanguage":{"name":"HTML"},"url":"https://github.com/Avdevop/hospital-proyecto"},{"description":"","isFork":false,"name":"proyeccion-social","primaryLanguage":{"name":"HTML"},"url":"https://github.com/Avdevop/proyeccion-social"},{"description":"","isFork":false,"name":"biblioteca","primaryLanguage":null,"url":"https://github.com/Avdevop/biblioteca"}]
 }
