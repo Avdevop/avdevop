@@ -867,7 +867,25 @@
     </a>
 
 </div>
+<div class="github-repositories">
 
+    <h3>
+        📁 Mis repositorios
+    </h3>
+
+    <p class="github-repositories-description">
+        Algunos de mis proyectos disponibles en GitHub.
+    </p>
+
+    <div id="repository-list" class="repository-list">
+
+        <p class="loading-repositories">
+            Cargando repositorios...
+        </p>
+
+    </div>
+
+</div>
             </div>
 
         </section>
@@ -954,6 +972,11 @@ async function cargarGitHubStats() {
 
         const data = await response.json();
 
+
+        /*
+         * ESTADÍSTICAS
+         */
+
         document.getElementById("github-repositories").textContent =
             data.repositories;
 
@@ -966,16 +989,96 @@ async function cargarGitHubStats() {
         document.getElementById("github-following").textContent =
             data.following;
 
-    } catch (error) {
+
+        /*
+         * REPOSITORIOS
+         */
+
+        const repositoryList =
+            document.getElementById("repository-list");
+
+
+        repositoryList.innerHTML = "";
+
+
+        data.repository_list.forEach(repo => {
+
+            const repositoryCard =
+                document.createElement("article");
+
+            repositoryCard.className =
+                "repository-card";
+
+
+            const language =
+                repo.primaryLanguage
+                    ? repo.primaryLanguage.name
+                    : "Proyecto";
+
+
+            repositoryCard.innerHTML = `
+
+                <div class="repository-icon">
+                    📁
+                </div>
+
+                <div class="repository-content">
+
+                    <h4>
+                        ${repo.name}
+                    </h4>
+
+                    <p>
+                        ${
+                            repo.description ||
+                            "Repositorio de proyecto."
+                        }
+                    </p>
+
+                    <span class="repository-language">
+                        💻 ${language}
+                    </span>
+
+                    <a
+                        href="${repo.url}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="repository-button"
+                    >
+                        Ver repositorio →
+                    </a>
+
+                </div>
+
+            `;
+
+
+            repositoryList.appendChild(repositoryCard);
+
+        });
+
+    }
+
+    catch (error) {
 
         console.error(
             "Error cargando estadísticas de GitHub:",
             error
         );
 
+
+        document.getElementById("repository-list").innerHTML = `
+
+            <p class="loading-repositories">
+                No se pudieron cargar los repositorios.
+            </p>
+
+        `;
+
     }
 
 }
+
 
 cargarGitHubStats();
 
