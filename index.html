@@ -964,38 +964,82 @@ async function cargarGitHubStats() {
 
     try {
 
-        const response = await fetch("./github-stats.json");
+        const response = await fetch(
+            "./github-stats.json?v=" + Date.now()
+        );
 
         if (!response.ok) {
-            throw new Error("No se pudo cargar github-stats.json");
+            throw new Error(
+                "HTTP " + response.status
+            );
         }
 
         const data = await response.json();
 
-
-        /*
-         * ESTADÍSTICAS
-         */
-
-        document.getElementById("github-repositories").textContent =
-            data.repositories;
-
-        document.getElementById("github-followers").textContent =
-            data.followers;
-
-        document.getElementById("github-public").textContent =
-            data.public_repositories;
-
-        document.getElementById("github-following").textContent =
-            data.following;
+        console.log("GitHub Stats:", data);
 
 
-        /*
-         * REPOSITORIOS
-         */
+        /* =========================
+           ESTADÍSTICAS
+        ========================= */
+
+        const repositories =
+            document.getElementById("github-repositories");
+
+        const followers =
+            document.getElementById("github-followers");
+
+        const publicRepositories =
+            document.getElementById("github-public");
+
+        const following =
+            document.getElementById("github-following");
+
+
+        if (repositories) {
+            repositories.textContent =
+                data.repositories;
+        }
+
+        if (followers) {
+            followers.textContent =
+                data.followers;
+        }
+
+        if (publicRepositories) {
+            publicRepositories.textContent =
+                data.public_repositories;
+        }
+
+        if (following) {
+            following.textContent =
+                data.following;
+        }
+
+
+        /* =========================
+           REPOSITORIOS
+        ========================= */
 
         const repositoryList =
             document.getElementById("repository-list");
+
+
+        if (!repositoryList) {
+            throw new Error(
+                "No existe el elemento #repository-list"
+            );
+        }
+
+
+        if (
+            !data.repository_list ||
+            !Array.isArray(data.repository_list)
+        ) {
+            throw new Error(
+                "repository_list no existe o no es un array"
+            );
+        }
 
 
         repositoryList.innerHTML = "";
@@ -1003,20 +1047,28 @@ async function cargarGitHubStats() {
 
         data.repository_list.forEach(repo => {
 
-            const repositoryCard =
+            const card =
                 document.createElement("article");
 
-            repositoryCard.className =
+            card.className =
                 "repository-card";
 
 
             const language =
-                repo.primaryLanguage
+                repo.primaryLanguage &&
+                repo.primaryLanguage.name
                     ? repo.primaryLanguage.name
                     : "Proyecto";
 
 
-            repositoryCard.innerHTML = `
+            const description =
+                repo.description &&
+                repo.description.trim() !== ""
+                    ? repo.description
+                    : "Repositorio de proyecto.";
+
+
+            card.innerHTML = `
 
                 <div class="repository-icon">
                     📁
@@ -1029,10 +1081,7 @@ async function cargarGitHubStats() {
                     </h4>
 
                     <p>
-                        ${
-                            repo.description ||
-                            "Repositorio de proyecto."
-                        }
+                        ${description}
                     </p>
 
                     <span class="repository-language">
@@ -1053,27 +1102,43 @@ async function cargarGitHubStats() {
             `;
 
 
-            repositoryList.appendChild(repositoryCard);
+            repositoryList.appendChild(card);
 
         });
+
+
+        console.log(
+            "Repositorios cargados:",
+            data.repository_list.length
+        );
 
     }
 
     catch (error) {
 
         console.error(
-            "Error cargando estadísticas de GitHub:",
+            "Error cargando GitHub:",
             error
         );
 
 
-        document.getElementById("repository-list").innerHTML = `
+        const repositoryList =
+            document.getElementById(
+                "repository-list"
+            );
 
-            <p class="loading-repositories">
-                No se pudieron cargar los repositorios.
-            </p>
 
-        `;
+        if (repositoryList) {
+
+            repositoryList.innerHTML = `
+
+                <p class="loading-repositories">
+                    ⚠️ No se pudieron cargar los repositorios.
+                </p>
+
+            `;
+
+        }
 
     }
 
