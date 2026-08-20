@@ -861,3 +861,136 @@ footer span {
     }
 
 }
+/* =========================
+   EXPERIENCIA LABORAL
+========================= */
+
+.experience {
+    display: grid;
+
+    gap: 20px;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+
+.experience-item {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 20px;
+
+    padding: 25px;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+
+.experience-item:hover {
+    transform: translateY(-5px);
+
+    background: var(--card-hover);
+
+    border-color:
+        rgba(30, 140, 255, 0.4);
+}
+
+
+.experience-icon {
+    width: 55px;
+
+    height: 55px;
+
+    min-width: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: rgba(30, 140, 255, 0.1);
+
+    border-radius: 12px;
+
+    font-size: 1.7rem;
+}
+
+
+.experience-content {
+    flex: 1;
+}
+
+
+.experience-content h3 {
+    font-size: 1.15rem;
+
+    margin-bottom: 5px;
+}
+
+
+.experience-date {
+    display: inline-block;
+
+    color: var(--primary-light);
+
+    font-size: 0.85rem;
+
+    font-weight: 600;
+
+    margin-bottom: 10px;
+}
+
+
+.experience-content p {
+    color: var(--text-secondary);
+
+    font-size: 0.9rem;
+
+    line-height: 1.7;
+}
+
+
+.experience-content strong {
+    color: var(--text);
+}
+
+
+/* =========================
+   EXPERIENCIA RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    .experience-item {
+        padding: 20px;
+
+        gap: 15px;
+    }
+
+
+    .experience-icon {
+        width: 45px;
+
+        height: 45px;
+
+        min-width: 45px;
+
+        font-size: 1.4rem;
+    }
+
+
+    .experience-content h3 {
+        font-size: 1rem;
+    }
+
+}
