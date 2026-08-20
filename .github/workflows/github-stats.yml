@@ -27,9 +27,16 @@ jobs:
         run: |
 
           REPOS=$(gh repo list avdevop \
+           --limit 100 \
+          --json name \
+          --jq 'length')
+          echo "Repositorios encontrados: $REPOS"
+          echo "Lista de repositorios:"
+
+          gh repo list avdevop \
             --limit 100 \
             --json name \
-            --jq 'length')
+            --jq '.[].name'
 
           FOLLOWERS=$(gh api users/avdevop \
             --jq '.followers')
